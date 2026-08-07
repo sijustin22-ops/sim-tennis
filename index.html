@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Private and group tennis coaching with Sim Tennis." />
+  <title>Sim Tennis | Coaching & Payments</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sim Tennis home">
+      <span class="brand-mark">S</span>
+      <span>
+        <strong>SIM TENNIS</strong>
+        <small>Berkeley • Bay Area</small>
+      </span>
+    </a>
+    <nav>
+      <a href="#lessons">Lessons</a>
+      <a href="#payment">Payment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FORMER D1 PLAYER • PRIVATE COACH</p>
+        <h1>Train with purpose.<br />Compete with confidence.</h1>
+        <p class="lead">
+          Personalized tennis coaching for juniors and adults, built around technique,
+          movement, consistency, and match strategy.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">Book a lesson</a>
+          <a class="button secondary" href="#payment">Pay for a lesson</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <div class="court">
+          <div class="court-line center"></div>
+          <div class="court-line service-one"></div>
+          <div class="court-line service-two"></div>
+          <div class="net"></div>
+          <div class="ball">•</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lessons">
+      <div class="section-heading">
+        <p class="eyebrow">COACHING OPTIONS</p>
+        <h2>Choose your session</h2>
+        <p>Rates can be changed in the website file anytime.</p>
+      </div>
+
+      <div class="cards">
+        <article class="price-card featured">
+          <span class="badge">Most popular</span>
+          <h3>Private Lesson</h3>
+          <p class="price">$70 <span>/ hour</span></p>
+          <p>One-on-one technical work, live-ball drills, movement, and strategy.</p>
+          <a class="text-link" href="#contact">Request a time →</a>
+        </article>
+
+        <article class="price-card">
+          <h3>90-Minute Lesson</h3>
+          <p class="price">$105 <span>/ session</span></p>
+          <p>More time for technical development, point play, and match preparation.</p>
+          <a class="text-link" href="#contact">Request a time →</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Group Clinic</h3>
+          <p class="price">$35 <span>/ player</span></p>
+          <p>Fast-paced drilling, fitness, competition, and tactical development.</p>
+          <a class="text-link" href="#contact">Join a clinic →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section payment-section" id="payment">
+      <div class="payment-copy">
+        <p class="eyebrow">FAST, FEE-FREE PAYMENT</p>
+        <h2>Pay with Zelle after your lesson</h2>
+        <p>
+          Scan your coach’s Zelle QR code or use the Zelle contact shown below.
+          Please include the player’s name and lesson date in the memo.
+        </p>
+
+        <div class="payment-details">
+          <div>
+            <span>Zelle contact</span>
+            <strong id="zelle-contact">YOUR PHONE OR EMAIL</strong>
+          </div>
+          <button class="copy-button" type="button" onclick="copyZelle()">Copy</button>
+        </div>
+
+        <p class="payment-note">
+          Payment is due at the end of each lesson. Any outstanding balance must be
+          paid before the next session begins.
+        </p>
+      </div>
+
+      <div class="qr-card">
+        <div class="qr-placeholder">
+          <span>ADD YOUR</span>
+          <strong>ZELLE QR</strong>
+          <span>IMAGE HERE</span>
+        </div>
+        <p>Open your banking app and scan to pay.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">BOOK A SESSION</p>
+        <h2>Ready to train?</h2>
+        <p>
+          Text your name, player level, preferred location, and available days.
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <a class="button primary" href="sms:+10000000000?body=Hi%20Justin%2C%20I%27d%20like%20to%20book%20a%20tennis%20lesson.">
+          Text to book
+        </a>
+        <a class="button secondary" href="mailto:you@example.com?subject=Tennis%20Lesson%20Request">
+          Email
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Sim Tennis. All rights reserved.</p>
+    <p>Payment policy: due at the end of each lesson.</p>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite">Copied!</div>
+  <script src="script.js"></script>
+</body>
+</html>
